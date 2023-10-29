@@ -15,6 +15,12 @@
   color: white;
 }
 
+.cor{
+  color:azure;
+  font-weight: bold;
+  font-size: large;
+}
+
 
 body {
   margin: 0;
@@ -131,18 +137,33 @@ main{
   }
 }
 
+
+
 .botao{
   text-align: center;
   font-size: 2.8125em;
   color: white;
   font-weight: bold;
+  background-color: #1b77bf;
+  border-color: white;
 }
+
+.botao:hover{
+  color: azure;
+
+}
+
+.botao:active{
+  color: azure;
+}
+
+
 
 
 @media (max-width: 768px) {
   .botao{
     text-align: center;
-    padding-left: 15%;
+    padding: 3%;
     font-size: 2.4em;
     
   }
