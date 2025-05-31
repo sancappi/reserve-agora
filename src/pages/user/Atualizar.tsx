@@ -17,7 +17,7 @@ const AtualizarDados: React.FC = () => {
     const deslogar = useDeslogar();
 
     useEffect(() => {
-        const usuariosRetorno = async() => {
+        const usuariosRetorno = async () => {
             const retorno = await usuario();
             if(retorno === -1) {
                 setMensagem({estilo:"text-sm text-red-600 text-center", texto: "Erro interno do servidor." });
@@ -33,7 +33,7 @@ const AtualizarDados: React.FC = () => {
     setValue("email", usuarioDados?.email);
     setValue("nome", usuarioDados?.nome);
     
-    const atualizarDados = async(dados: Atualizar) => {
+    const atualizarDados = async (dados: Atualizar) => {
         const email = dados.email;
         const nome = dados.nome;
         const analisar = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;

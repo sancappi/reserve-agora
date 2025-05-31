@@ -18,7 +18,7 @@ const Cadastrar: React.FC = () => {
     const [ver, setVer] = useState<boolean>(false);
     const {register, handleSubmit, formState: {errors}, setValue, watch, control} = useForm<Usuario>();
 
-    const cadastrarUsuario = async(dados: Usuario) => {
+    const cadastrarUsuario = async (dados: Usuario) => {
         const enviar = await cadastrar(dados);
         if(enviar === 0) {
             setTimeout(()=> {

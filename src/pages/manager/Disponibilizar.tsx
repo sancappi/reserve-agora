@@ -39,7 +39,7 @@ const Disponibilizar: React.FC = () => {
         };
     };
 
-    const sala = async(sala: Sala) => {
+    const sala = async (sala: Sala) => {
         setEspera(true);
         const res = await salvar(sala);
         if(res === 0) {

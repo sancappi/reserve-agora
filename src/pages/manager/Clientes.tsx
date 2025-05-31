@@ -19,7 +19,7 @@ const Clientes: React.FC = () => {
   const deslogar = useDeslogar();
 
   useEffect(() => {
-    const dados = async() => {
+    const dados = async () => {
       setEspera(true);
       const res = await listar();
       if(res === 2) {

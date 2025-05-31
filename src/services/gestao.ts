@@ -20,7 +20,7 @@ export interface Cliente {
     email: string;
 };
 
-export const salvar = async(sala: Sala):Promise<number> => {
+export const salvar = async (sala: Sala):Promise<number> => {
     try {
         const res = await fetch(`${API}/salvar_sala`, {
             method: "POST",
@@ -44,7 +44,7 @@ export const salvar = async(sala: Sala):Promise<number> => {
     };
 };
 
-export const disponibilizadas = async():Promise<any> => {
+export const disponibilizadas = async ():Promise<any> => {
     try {
         const res = await fetch(`${API}/disponibilizadas`, {
             credentials: "include"
@@ -64,7 +64,7 @@ export const disponibilizadas = async():Promise<any> => {
     };
 };
 
-export const atualizar = async(id:any, sala: Sala): Promise<number> => {
+export const atualizar = async (id:any, sala: Sala): Promise<number> => {
     try {
         const res = await fetch(`${API}/atualizar_sala/${id}`, {
             method: "POST",
@@ -89,7 +89,7 @@ export const atualizar = async(id:any, sala: Sala): Promise<number> => {
     };
 };
 
-export const excluir = async(id: any): Promise<number> => {
+export const excluir = async (id: any): Promise<number> => {
     try {
         const res = await fetch(`${API}/excluir_sala/${id}`, {
             method: "DELETE",
@@ -110,7 +110,7 @@ export const excluir = async(id: any): Promise<number> => {
     };
 };
 
-export const listar = async():Promise<any> => {
+export const listar = async ():Promise<any> => {
     try {
         const res = await fetch(`${API}/listar`, {
             credentials: "include"
@@ -129,7 +129,7 @@ export const listar = async():Promise<any> => {
     };
 };
 
-export const atualizarCliente = async(id: any, cliente: Cliente): Promise<number> => {
+export const atualizarCliente = async (id: any, cliente: Cliente): Promise<number> => {
     const dados = {
         email: cliente.email,
         nome: cliente.nome,
@@ -158,7 +158,7 @@ export const atualizarCliente = async(id: any, cliente: Cliente): Promise<number
     };
 };
 
-export const excluirCliente = async(id: string): Promise<number> => {
+export const excluirCliente = async (id: string): Promise<number> => {
     try {
         const res = await fetch(`${API}/excluir_cliente/${id}`, {
             method: "DELETE",

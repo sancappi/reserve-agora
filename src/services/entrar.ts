@@ -5,7 +5,7 @@ export interface Dados {
     senha: string;
 };
 
-export const login = async(usuario: Dados): Promise<any> => {
+export const login = async (usuario: Dados): Promise<any> => {
     try {
         const res = await fetch(`${API}/login`, {
             method: "POST",
@@ -30,7 +30,7 @@ export const login = async(usuario: Dados): Promise<any> => {
     };
 };
 
-export const logout = async(): Promise<number> => {
+export const logout = async (): Promise<number> => {
     try {
         const res = await fetch(`${API}/logout`, {
             method: 'POST',

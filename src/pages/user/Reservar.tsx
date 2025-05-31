@@ -36,7 +36,7 @@ const Reservar:React.FC = () => {
         minDate: "today"
     };
 
-    const ver = async(dados: Dados) => {        
+    const ver = async (dados: Dados) => {        
         if(dados.data === null || dados.inicio === "" || dados.fim === "") {
             setMensagem("Preencha todos os campos.");
             return;

@@ -17,7 +17,7 @@ const ExcluirCliente: React.FC<Excluir> = ({excluir, id, pExcluirCliente}) => {
     const [mensagem, setMensagem] = useState({estilo: "", texto: ""});
     const deslogar= useDeslogar();
 
-    const excluirC = async(id: string) => {
+    const excluirC = async (id: string) => {
         setEsperar(true);
         const res = await excluirCliente(id);
         if(res === 2) {

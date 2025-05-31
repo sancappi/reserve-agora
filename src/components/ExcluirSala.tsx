@@ -16,7 +16,7 @@ const ExcluirSala: React.FC<Modal> = ({modal, id, atualizar}) => {
     const [mensagem, setMensagem] = useState({estilo: "", texto: ""});
     const deslogar = useDeslogar();
 
-    const excluirSala = async(id: any) => {
+    const excluirSala = async (id: any) => {
         setEspera(true);
         const res = await excluir(id);
         if(res === 2) {

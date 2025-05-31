@@ -18,7 +18,7 @@ const RecuperarSenha: React.FC = () => {
     const {register, handleSubmit, formState: {errors}, watch, reset} = useForm<Senhas>({mode: "onBlur", reValidateMode: "onBlur"});
     const [espera, setEspera] = useState<boolean>(false);
 
-    const recuperar = async(dados: Senhas) => {
+    const recuperar = async (dados: Senhas) => {
         const url = new URLSearchParams(window.location.search);
         const token = String(url.get("token"));
         setEspera(true);

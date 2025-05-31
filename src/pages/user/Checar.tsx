@@ -13,7 +13,7 @@ const Checar: React.FC = () => {
     const {register, handleSubmit, formState: {errors}, reset} = useForm<Email>();
     const [espera, setEsperar] = useState<boolean>(false);
     
-    const recuperar = async(dados: Email) => {
+    const recuperar = async (dados: Email) => {
         setEsperar(true);
         const retorno = await checarEmail(dados.email);
         if(retorno === 0) {

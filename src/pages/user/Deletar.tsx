@@ -13,7 +13,7 @@ const Deletar: React.FC = () => {
     const navegar = useNavigate();
     const deslogar = useDeslogar();
     
-    const excluirConta = async() => {
+    const excluirConta = async () => {
         setEstado(true);
         const res = await excluir();
         if(res === 2) {

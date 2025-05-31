@@ -16,7 +16,7 @@ const ExcluirReserva:React.FC<Excluir>= ({onExcluir, id, atualizar}) => {
     const [esperar, setEsperar] = useState<boolean>(false);
     const deslogar = useDeslogar();
 
-    const excluirR = async(id: string) => {
+    const excluirR = async (id: string) => {
         setEsperar(true);
         const res = await excluirReserva(id);
         if(res === 2) {

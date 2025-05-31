@@ -20,7 +20,7 @@ const AlterarSenha: React.FC<Dados> = ({senha}) => {
         setVer(!ver);
     };
 
-    const atualizar = async(dados: Senha) => {
+    const atualizar = async (dados: Senha) => {
         const res = await atualizarSenha(dados);
         if(res === 0) {
             setError("root", {

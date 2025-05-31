@@ -20,7 +20,7 @@ const Disponibilizadas: React.FC = () => {
     const deslogar = useDeslogar();
 
     useEffect(()=> {
-        const verSalas = async() => {
+        const verSalas = async () => {
             setEspera(true);
             const recebidas = await disponibilizadas();
             if(recebidas === 2) {

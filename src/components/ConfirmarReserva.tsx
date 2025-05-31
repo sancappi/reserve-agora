@@ -29,10 +29,10 @@ const ConfirmarReserva: React.FC<Confirmado> = ({onFuncaoModal, id, titulo, sala
     const [mensagem, setMensagem] = useState({estilo: "", texto: ""});
     const [espera, setEspera] = useState<boolean>(false);
 
-    const cancelar = async() => {
+    const cancelar = async () => {
         onFuncaoModal();
     };
-    const confirmar = async() => {
+    const confirmar = async () => {
         setEspera(true);
         const reserva: CriarReserva = {
             sala: id,

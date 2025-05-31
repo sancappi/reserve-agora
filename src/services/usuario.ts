@@ -40,7 +40,7 @@ export interface Recuperar {
     token: string;
 };
 
-export const cadastrar = async(usuario: Usuario): Promise<number> => {
+export const cadastrar = async (usuario: Usuario): Promise<number> => {
     try {
         const res = await fetch(`${API}/cadastrar`, {
             method: "POST",
@@ -62,7 +62,7 @@ export const cadastrar = async(usuario: Usuario): Promise<number> => {
     };
 };
 
-export const atualizarEmailNome = async(dados: Atualizar): Promise<number> => {
+export const atualizarEmailNome = async (dados: Atualizar): Promise<number> => {
     try {
         const res = await fetch(`${API}/atualizar_dados`, {
             method: "POST",
@@ -87,7 +87,7 @@ export const atualizarEmailNome = async(dados: Atualizar): Promise<number> => {
     };
 };
 
-export const usuario = async(): Promise<any> => {
+export const usuario = async (): Promise<any> => {
     try {
         const res = await fetch(`${API}/usuarios`, {
             credentials: "include"
@@ -105,7 +105,7 @@ export const usuario = async(): Promise<any> => {
     };
 };
 
-export const atualizarSenha = async(dados: Senha): Promise<number> => {
+export const atualizarSenha = async (dados: Senha): Promise<number> => {
     const senha = {
         atual: dados.atual,
         nova: dados.nova
@@ -132,7 +132,7 @@ export const atualizarSenha = async(dados: Senha): Promise<number> => {
     };
 };
 
-export const excluir = async(): Promise<number> => {
+export const excluir = async (): Promise<number> => {
     try {
         const res = await fetch(`${API}/excluir_usuario`, {
             method: "DELETE",
@@ -152,7 +152,7 @@ export const excluir = async(): Promise<number> => {
     };
 };
 
-export const disponiveis = async(info:Disponiveis): Promise<any> => {
+export const disponiveis = async (info:Disponiveis): Promise<any> => {
     try {
         const res = await fetch(`${API}/disponiveis`, {
             method: "POST",
@@ -176,7 +176,7 @@ export const disponiveis = async(info:Disponiveis): Promise<any> => {
     };
 };
 
-export const salvarReserva = async(reserva: CriarReserva): Promise<number> => {
+export const salvarReserva = async (reserva: CriarReserva): Promise<number> => {
     try {
         const res = await fetch(`${API}/salvar_reserva`, {
             method: "POST",
@@ -201,7 +201,7 @@ export const salvarReserva = async(reserva: CriarReserva): Promise<number> => {
     };
 };
 
-export const reservas = async(): Promise<any> => {
+export const reservas = async (): Promise<any> => {
     try {
         const res = await fetch(`${API}/reservas`, {
             credentials: "include"
@@ -220,7 +220,7 @@ export const reservas = async(): Promise<any> => {
     };
 };
 
-export const excluirReserva = async(id:string): Promise<number> => {
+export const excluirReserva = async (id:string): Promise<number> => {
     try {
         const res = await fetch(`${API}/excluir_reserva/${id}`, {
             method: "DELETE",
@@ -239,7 +239,7 @@ export const excluirReserva = async(id:string): Promise<number> => {
     };
 };
 
-export const checarEmail = async(email: string): Promise<number> => {
+export const checarEmail = async (email: string): Promise<number> => {
     const dados = {
         email: email
     };
@@ -265,7 +265,7 @@ export const checarEmail = async(email: string): Promise<number> => {
     };
 };
 
-export const recuperarSenha = async(dados: Recuperar): Promise<number> => {
+export const recuperarSenha = async (dados: Recuperar): Promise<number> => {
     try {
         const res = await fetch(`${API}/senha`, {
             method: "POST",
