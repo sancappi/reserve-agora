@@ -29,18 +29,12 @@ Foi criado com foco em ser uma interface intuitiva, responsiva e amigável.
 Para iniciar em modo de desenvolvimento:
 
 ```bash
-npm run dev
+npm start
 ```
 
 Para gerar os arquivos otimizados para produção:
 
 ```bash
-npm build
-```
-
-Para visualizar o projeto em ambiente de produção:
-
-```bash
-npm start
+npm run build
 ```
   
