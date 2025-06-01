@@ -1,7 +1,7 @@
 # Reserve
 
-O Reserve trata-se do front-end de um projeto full-stack que desenvolvi. 
-Foi projetado com foco em ser uma interface intuitiva, responsiva e amigável.
+Este projeto é o front-end de um sistema full-stack que desenvolvi. 
+Foi criado com foco em ser uma interface intuitiva, responsiva e amigável.
 
 ## Demonstração
 
@@ -26,15 +26,11 @@ Foi projetado com foco em ser uma interface intuitiva, responsiva e amigável.
 
 ## Como rodar o projeto
 
-### Ambiente de desenvolvimento
-
-Para iniciar o projeto em modo de desenvolvimento:
+Para iniciar em modo de desenvolvimento:
 
 ```bash
 npm run dev
 ```
-
-### Ambiente de produção
 
 Para gerar os arquivos otimizados para produção:
 
